@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multiplication Table</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #36e863;
+    }
+
+    h1 {
+      color: #0f1b19;
+    }
+
+    #logo {
+      margin-top: 10px;
+      width: 600px;
+    }
+
+    #container {
+      margin-top: 20px;
+    }
+
+    table {
+      margin: 0 auto;
+      border-collapse: collapse;
+      background-color: #f1b8b8;
+    }
+
+    th, td {
+      padding: 10px;
+      border: 1px solid black;
+      color: #444;
+    }
+
+    input[type="number"] {
+      width: 60px;
+      padding: 5px;
+    }
+
+    button {
+      background-color: #444;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #8d0d08;
+    }
+
+    footer {
+      margin-top: 20px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <h1>Multiplication Table</h1>
+
+  <img id="logo" src="image1.jpeg" alt="Logo">
+
+  <div id="container">
+    <label for="rows">Rows:</label>
+    <input type="number" id="rows" min="1" value="10">
+    <label for="columns">Columns:</label>
+    <input type="number" id="columns" min="1" value="10">
+    <button onclick="drawTable()">Create Table</button>
+  </div>
+
+  <table id="multiplicationTable"></table>
+
+  <footer>
+    &copy; 2024 Md Anamul Habib
+  </footer>
+
+  <script src="Assignment1.js"></script>
+</body>
+</html>
